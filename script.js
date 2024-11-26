@@ -1,16 +1,9 @@
 let humanScore = 0, computerScore = 0;
 
 function getComputerChoice(){
-    let random = Math.random()*10;
-    let number = Math.floor(random)
-    let choice = "";
-    if(number>=0 && number<=3){
-        return choice = "rock"
-    }
-    else if(number>3 && number<=6){
-        return choice = "paper"
-    }
-    else return choice = "scissors"
+    let choice = ["rock", "paper", "scissor"];
+    let pick = Math.floor(Math.random()*3);
+    return choice[pick];
 }
 
 function getHumanChoice(){
